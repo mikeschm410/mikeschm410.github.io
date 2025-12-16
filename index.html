@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mason Mikesch | Project Portfolio</title>
+  <meta name="description" content="Project portfolio: Utility Data Consulting (Access/SQL/Tableau) and Healthcare Call Center Dashboard (Domo)." />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#111826; --muted:#9aa7b2; --text:#e8eef4;
+      --accent:#63b3ff; --border:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:linear-gradient(180deg,#0b0f14 0%, #0a1220 100%);
+      color:var(--text); line-height:1.45;
+    }
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 64px;}
+    header{display:flex; flex-direction:column; gap:14px; padding:18px 0 8px;}
+    .topline{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;}
+    h1{font-size:28px; margin:0}
+    .subtitle{color:var(--muted); margin:0; max-width:70ch}
+    .links{display:flex; flex-wrap:wrap; gap:10px}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid var(--border); background:rgba(255,255,255,.04);
+      padding:8px 12px; border-radius:999px; color:var(--text); text-decoration:none;
+      font-size:14px;
+    }
+    .pill:hover{border-color:rgba(99,179,255,.5)}
+    .grid{display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px;}
+    @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr;} }
+    .card{
+      border:1px solid var(--border); background:rgba(17,24,38,.75);
+      border-radius:16px; padding:16px; box-shadow:0 8px 30px rgba(0,0,0,.25);
+    }
+    .card h2{margin:0 0 6px; font-size:18px}
+    .meta{color:var(--muted); font-size:13px; margin:0 0 10px}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 14px}
+    .tag{
+      font-size:12px; color:#cfe6ff; border:1px solid rgba(99,179,255,.35);
+      background:rgba(99,179,255,.08); padding:5px 9px; border-radius:999px;
+    }
+    ul{margin:10px 0 0 18px; padding:0}
+    li{margin:6px 0; color:var(--text)}
+    li span{color:var(--muted)}
+    .gallery{
+      display:grid; grid-template-columns:1fr; gap:10px; margin-top:12px;
+    }
+    @media (min-width:520px){ .gallery{grid-template-columns:1fr 1fr;} }
+    figure{margin:0; border:1px solid var(--border); border-radius:14px; overflow:hidden; background:#0b0f14}
+    img{width:100%; height:auto; display:block}
+    figcaption{padding:8px 10px; font-size:12px; color:var(--muted)}
+    .section-title{
+      margin:26px 0 10px; color:var(--muted); font-weight:600; letter-spacing:.02em; font-size:13px;
+      text-transform:uppercase;
+    }
+    .footer{margin-top:28px; color:var(--muted); font-size:13px}
+    .note{color:var(--muted); font-size:13px; margin-top:10px}
+    .accent{color:var(--accent)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="topline">
+        <h1>Mason Mikesch</h1>
+        <div class="links">
+          <!-- Update these -->
+          <a class="pill" href="https://www.linkedin.com/in/mason-mikesch/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="pill" href="mailto:YOUR_EMAIL_HERE">Email</a>
+          <!-- Optional: upload a resume PDF into repo and link it, e.g. /assets/Mason_Mikesch_Resume.pdf -->
+          <a class="pill" href="#" target="_blank" rel="noreferrer">Resume (PDF)</a>
+        </div>
+      </div>
+
+      <p class="subtitle">
+        Simple portfolio highlighting two school projects: a <span class="accent">utility data consulting system</span> (Access + SQL + Tableau)
+        and a <span class="accent">healthcare call center analytics dashboard</span> (Domo).
+      </p>
+
+      <p class="note">
+        Atlanta, GA • Open to analyst / BI / project coordination roles
+      </p>
+    </header>
+
+    <div class="section-title">Featured Projects</div>
+
+    <section class="grid">
+
+      <!-- PROJECT 1: Utility Consulting -->
+      <article class="card">
+        <h2>Utility Data Consulting Project (University Capstone)</h2>
+        <p class="meta">Access + SQL + Excel → Tableau Dashboards (automated monthly refresh workflow)</p>
+
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Access</span>
+          <span class="tag">ETL</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">Data Validation</span>
+          <span class="tag">Reporting</span>
+        </div>
+
+        <ul>
+          <li>Built an <b>Access-based intake + transformation workflow</b> that imported monthly Excel utility files and standardized them for reporting.</li>
+          <li>Used <b>SQL in Access</b> to handle complex meter/building relationships (many-to-one and one-to-many) and allocate usage accurately to buildings/departments.</li>
+          <li>Created Tableau dashboards for leadership and end users so visuals <b>refresh when new monthly data is appended</b>.</li>
+          <li><span>Focus:</span> accuracy, repeatable reporting, and clear visual metrics (consumption, cost, emissions).</li>
+        </ul>
+
+        <div class="gallery">
+          <!-- Update filenames to match what you upload into /assets -->
+          <figure>
+            <img src="assets/utility-leadership-big10.png" alt="Utility leadership dashboard (Big 10)" />
+            <figcaption>Leadership view (Big 10): cost + consumption + GHG by category</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/utility-customer-dashboard.png" alt="Utility customer dashboard" />
+            <figcaption>Customer view: unit-level filters + time trends + key metrics</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/utility-leadership-dashboard.png" alt="Utility leadership dashboard" />
+            <figcaption>Leadership view: time trends + yearly comparison + utilization</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/utility-access-db.png" alt="Access database system screenshot" />
+            <figcaption>Access system: import, QC checks, transformations, and export-ready outputs</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: Healthcare (Domo) -->
+      <article class="card">
+        <h2>Healthcare Call Center Dashboard (Client Domo Environment)</h2>
+        <p class="meta">Domo dashboarding + automated refresh as
